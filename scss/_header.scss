@@ -15,6 +15,9 @@
     display: inline-block;
     margin: 0 20px;
     line-height: 80px;
+    #icon{
+        color: $yellowColor;
+    }
 }
 .hero-header__menu ul li a{
     color: $blackColor;
