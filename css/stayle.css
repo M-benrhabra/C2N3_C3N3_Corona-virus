@@ -120,4 +120,14 @@ body {
 .recommandations__offic {
   width: 100%;
   height: 300px;
-  background-color: #1078AD; }
+  background-color: #1078AD;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 23px; }
+  .recommandations__offic .display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px; }
+    .recommandations__offic .display p {
+      color: #fff; }
