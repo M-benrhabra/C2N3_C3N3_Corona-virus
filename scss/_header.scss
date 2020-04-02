@@ -48,7 +48,39 @@
 }
 .hero-header__illustration{
     display: flex;
-    padding: 30px 15px;
+    padding: 30px 25px;
+    width: 100%;
 }
-
+.hero-header__illustration .doc{
+    width: 50%;
+    height: 50%;
+}
+.hero-header__illustration .text{
+    text-align: center;
+    line-height: 45px;
+    margin-top: 35px;
+    h2{
+        color: $bluColor;
+        font-size: 30px;
+        margin-bottom: 25px;
+    }
+    p{
+        color: $opacityColor;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    button{
+        margin-top: 30px;
+        width: 450px;
+        height: 35px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: $whiteColor;
+        background-color: $buttonColor;
+        border: 0px;
+        
+    }
+    
+}
 
