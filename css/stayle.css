@@ -1,0 +1,60 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none; }
+
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif; }
+
+.hero-header__menu {
+  width: 100%;
+  height: 70px;
+  background: url("../images/png/Merged bar-17.png") repeat; }
+
+.hero-header__menu .logo {
+  height: 60px;
+  margin: 8px 40px; }
+
+.hero-header__menu ul {
+  float: right;
+  margin-right: 50px; }
+
+.hero-header__menu ul li {
+  display: inline-block;
+  margin: 0 20px;
+  line-height: 80px; }
+
+.hero-header__menu ul li a {
+  color: #000;
+  font-weight: bold; }
+
+.hero-header__menu ul li a:hover {
+  color: #1A519E; }
+
+.hero-header__menu ul li .button {
+  width: 80px;
+  height: 35px;
+  text-align: center;
+  color: #1078AD;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 5px;
+  border: 1px solid #1078AD; }
+
+.hero-header__info {
+  width: 100%;
+  height: 150px;
+  background: url("../images/png/En chiffres-3.png");
+  text-align: center; }
+
+.hero-header__info h2 {
+  padding: 15px;
+  font-size: 20px; }
+
+.hero-header__info p {
+  color: #1078AD; }
+
+.hero-header__illustration {
+  display: flex;
+  padding: 30px 15px; }
