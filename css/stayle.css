@@ -86,7 +86,8 @@ body {
     font-size: 20px;
     color: #fff;
     background-color: #1078AD;
-    border: 0px; }
+    border: 0px;
+    border-radius: 2px; }
 
 .symptômes {
   width: 100%;
@@ -119,15 +120,68 @@ body {
 
 .recommandations__offic {
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-color: #1078AD;
   text-align: center;
-  padding-left: 20px;
-  padding-right: 23px; }
+  padding-left: 50px;
+  padding-right: 100px; }
+  .recommandations__offic h1 {
+    padding: 25px;
+    color: #fff; }
   .recommandations__offic .display {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 30px; }
+    margin-top: 20px;
+    line-height: 40px; }
+    .recommandations__offic .display h3 {
+      text-align: left;
+      font-size: 20px; }
     .recommandations__offic .display p {
-      color: #fff; }
+      color: #fff;
+      text-align: left;
+      font-size: 20px; }
+    .recommandations__offic .display h2 {
+      font-weight: bold;
+      color: #F4CF1B; }
+    .recommandations__offic .display button {
+      margin: 20px 0px;
+      width: 150px;
+      height: 50px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #1078AD;
+      background-color: #F4CF1B;
+      border: 0px;
+      border-radius: 3px; }
+    .recommandations__offic .display a {
+      color: #fff;
+      border-bottom: 2px solid #F4CF1B; }
+
+.contact {
+  width: 100%;
+  height: 250px;
+  background-color: #96C5DC;
+  text-align: center; }
+  .contact h2 {
+    color: #1078AD;
+    padding: 20px; }
+  .contact button {
+    margin-top: 25px;
+    width: 450px;
+    height: 45px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1078AD;
+    border: 0px;
+    border-radius: 2px; }
+
+.hero-footer__infoo {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px; }
