@@ -152,22 +152,34 @@ body {
   .symptômes__cas {
     display: flex;
     justify-content: center; }
-    .symptômes__cas .cas-virus {
-      width: 60%; }
-  .symptômes__left {
-    margin: 60px 110px;
-    line-height: 20px; }
-    .symptômes__left p {
-      font-weight: bold;
-      margin-bottom: 70px;
-      font-size: 20px; }
-  .symptômes__right {
-    margin: 28px 110px;
-    line-height: 20px; }
-    .symptômes__right p {
-      font-weight: bold;
-      margin-bottom: 30px;
-      font-size: 20px; }
+  .symptômes .cas-virus {
+    width: 60%; }
+
+.symptôme__left {
+  margin: 65px 110px;
+  line-height: 25px; }
+  .symptôme__left p {
+    font-weight: bold;
+    margin-bottom: 60px;
+    font-size: 20px; }
+
+.symptôme__right {
+  margin: 28px 110px;
+  line-height: 25px; }
+  .symptôme__right p {
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 20px; }
+
+.symptômes__covod {
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 30px; }
+  .symptômes__covod p {
+    font-weight: bold;
+    color: #1A519E; }
 
 .recommandations__offic {
   width: 100%;
