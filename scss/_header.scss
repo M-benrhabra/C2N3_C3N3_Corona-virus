@@ -86,4 +86,71 @@
     }
     
 }
+.prévention{
+    margin-top: 30px;
+    text-align: center;
+    line-height: 35px;
+    font-weight: bold;
+    h1{
+        font-size: 2rem;
+        line-height: 37px;
+        color: $bluColor;
+    }
+    &__virus{
+        padding: 0 35px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around; 
+        align-items: center;
+    }
+    &__corona{
+        p{
+            margin-bottom: 35px;
+            color: $bColor;
+        }
+       
+    }
+   
+    &__home{
+        margin: 30px;
+        p{
+            color: $bColor;
+        }
+    }
+    &__Informations{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 250px;
+            width: 100%;
+            background-color: $blColor;
+            padding: 0px 90px;
+            h2{
+                color: $bluColor;
+                margin-bottom: 10px;
+                font-size: 1.8rem;
+            }
+            p{
+            color: $bColor;
+            font-size: 1.2rem;
+            }
+            ul{
+                display: flex;
+                li{
+                    margin: 35px;
+                    button{
+                        width: 240px;
+                        height: 45px;
+                        text-align: center;
+                        font-weight: bold;
+                        color: $whiteColor;
+                        background-color: $buttonColor;
+                        border: 0px;
+                        border-radius: 2px;
+                    }
+                }
+            }
+    }
+    
+}
 

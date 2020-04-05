@@ -91,6 +91,57 @@ body {
     border: 0px;
     border-radius: 2px; }
 
+.prévention {
+  margin-top: 30px;
+  text-align: center;
+  line-height: 35px;
+  font-weight: bold; }
+  .prévention h1 {
+    font-size: 2rem;
+    line-height: 37px;
+    color: #1078AD; }
+  .prévention__virus {
+    padding: 0 35px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+  .prévention__corona p {
+    margin-bottom: 35px;
+    color: #1A519E; }
+  .prévention__home {
+    margin: 30px; }
+    .prévention__home p {
+      color: #1A519E; }
+  .prévention__Informations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 250px;
+    width: 100%;
+    background-color: #D0E5F0;
+    padding: 0px 90px; }
+    .prévention__Informations h2 {
+      color: #1078AD;
+      margin-bottom: 10px;
+      font-size: 1.8rem; }
+    .prévention__Informations p {
+      color: #1A519E;
+      font-size: 1.2rem; }
+    .prévention__Informations ul {
+      display: flex; }
+      .prévention__Informations ul li {
+        margin: 35px; }
+        .prévention__Informations ul li button {
+          width: 240px;
+          height: 45px;
+          text-align: center;
+          font-weight: bold;
+          color: #fff;
+          background-color: #1078AD;
+          border: 0px;
+          border-radius: 2px; }
+
 .symptômes {
   width: 100%;
   margin-top: 70px;
@@ -101,24 +152,22 @@ body {
   .symptômes__cas {
     display: flex;
     justify-content: center; }
-  .symptômes .cas-virus {
-    width: 60%; }
-
-.symptôme__left {
-  margin: 60px 110px;
-  line-height: 20px; }
-  .symptôme__left p {
-    font-weight: bold;
-    margin-bottom: 70px;
-    font-size: 20px; }
-
-.symptôme__right {
-  margin: 28px 110px;
-  line-height: 20px; }
-  .symptôme__right p {
-    font-weight: bold;
-    margin-bottom: 30px;
-    font-size: 20px; }
+    .symptômes__cas .cas-virus {
+      width: 60%; }
+  .symptômes__left {
+    margin: 60px 110px;
+    line-height: 20px; }
+    .symptômes__left p {
+      font-weight: bold;
+      margin-bottom: 70px;
+      font-size: 20px; }
+  .symptômes__right {
+    margin: 28px 110px;
+    line-height: 20px; }
+    .symptômes__right p {
+      font-weight: bold;
+      margin-bottom: 30px;
+      font-size: 20px; }
 
 .recommandations__offic {
   width: 100%;
