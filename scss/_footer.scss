@@ -1,49 +1,60 @@
 .hero-footer{
     text-align: center;
     margin-top: 20px;
-}
-.hero-footer__infoo{
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-    padding: 0 20px;
-    margin-top: 25px;
-    .nav ul{
-        line-height: 50px;
-        li a{
-            color: $blackColor;
-            font-weight: bold;
-            text-transform: capitalize;
-        }
-        button{
-            width: 80px;
-            height: 35px;
-            text-align: center;
-            background-color: rgba($color: #ffffff, $alpha: 0);
-            border-radius: 5px;
-            border: 1px solid $bluColor;
-        }
+    &__infoo{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 20px;
+        margin-top: 25px;
+        
     }
-    .utiles ul{
-        line-height: 50px;
-        font-weight: bold;
-        li h2{
-            color: $buttonColor;
+    .contenu{
+        &__nav{
+            ul{
+                line-height: 50px;
+                li a{
+                    color: $blackColor;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                }
+                button{
+                    width: 80px;
+                    height: 35px;
+                    text-align: center;
+                    background-color: rgba($color: #ffffff, $alpha: 0);
+                    border-radius: 5px;
+                    border: 1px solid $bluColor;
+                }
+            }
         }
-        li h3{
-            color: $greenColor;
+        &__utiles{
+            ul{
+                line-height: 50px;
+                font-weight: bold;
+                li h2{
+                    color: $buttonColor;
+                }
+                li h3{
+                    color: $greenColor;
+                }
+            }
+        } 
+        &__parag{
+            margin-top: 50px;
+            line-height: 35px;
+            color: $opacityColor;
+            text-align: left;
         }
+    
     }
-    .parag{
-        margin-top: 50px;
-        line-height: 35px;
-        color: $opacityColor;
-        text-align: left;
+    &__the-end{
+        width: 100%;
+        height: 40px;
+        background-color: $buttonColor;
     }
 }
-.the-end{
-    width: 100%;
-    height: 40px;
-    background-color: $buttonColor;
-}
+
+   
+   

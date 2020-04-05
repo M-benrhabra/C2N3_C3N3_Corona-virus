@@ -10,38 +10,40 @@
         display: flex;
         justify-content: center;
     }
-    .cas-virus{
-        width: 60%;
+    .icon{
+        .cas-virus{
+            width: 60%;
+        }
+        &__left{
+            margin:65px 110px;
+            line-height: 25px;
+            p{
+                font-weight: bold;
+                margin-bottom: 60px;
+                font-size: 20px;
+            }
+        }
+        &__right{
+            margin:28px 110px;
+            line-height: 25px;
+            p{
+                font-weight: bold;
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+        }
     }
+    &__covod{
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        line-height: 30px;
+        p{
+            font-weight: bold;
+            color: $bColor;
+        }
     
-}
-.symptôme__left{
-    margin:65px 110px;
-    line-height: 25px;
-    p{
-        font-weight: bold;
-        margin-bottom: 60px;
-        font-size: 20px;
     }
 }
-.symptôme__right{
-    margin:28px 110px;
-    line-height: 25px;
-    p{
-        font-weight: bold;
-        margin-bottom: 30px;
-        font-size: 20px;
-    }
-}
-.symptômes__covod{
-    height: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    line-height: 30px;
-    p{
-        font-weight: bold;
-        color: $bColor;
-    }
 
-}
