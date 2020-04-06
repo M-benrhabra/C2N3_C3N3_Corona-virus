@@ -1,5 +1,5 @@
 .symptômes{
-    width: 100%;
+    width: $widthSize;
     margin-top: 70px;
     text-align: center;
     h1{
@@ -35,9 +35,7 @@
     }
     &__covod{
         height: 300px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+        @extend %displ;
         line-height: 30px;
         p{
             font-weight: bold;

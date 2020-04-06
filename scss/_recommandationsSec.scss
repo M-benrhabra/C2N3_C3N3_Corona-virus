@@ -1,6 +1,6 @@
 .recommandations{
     &__offic{
-        width: 100%;
+        width: $widthSize;
         height: 400px;
         background-color: $bluColor;
         text-align: center;
@@ -14,9 +14,8 @@
     }
     .section{
         &__display{
-            display: flex;
+            @extend %displ;
             justify-content: space-between;
-            align-items: center;
             margin-top: 20px;
             line-height: 40px;
             h3{
@@ -33,16 +32,13 @@
                 color: $yellowColor;
             }
             button{
+                @extend %test ; 
                 margin: 20px 0px;
                 width: 150px;
                 height: 50px;
-                text-align: center;
-                font-weight: bold;
-                font-size: 20px;
-                color: $bluColor;
                 background-color:$yellowColor;
-                border: 0px;
-                border-radius: 3px;
+                color: $bluColor;
+                font-size: 20px;
             }
             a{
                 color: $whiteColor;
@@ -51,9 +47,9 @@
         }
     }
     &__contact{
-        width: 100%;
+        width: $widthSize;
         height: 250px;
-        background-color: #96C5DC;
+        background-color: $blColor;
         text-align: center;
         h2{
             color: $buttonColor;
@@ -63,13 +59,8 @@
             margin-top: 25px;
             width: 450px;
             height: 45px;
-            text-align: center;
-            font-weight: bold;
             font-size: 20px;
-            color: $whiteColor;
-            background-color: $buttonColor;
-            border: 0px;
-            border-radius: 2px;
+            @extend %test ; 
         }
     }
 }

@@ -7,7 +7,29 @@ $buttonColor:#1078AD;
 $yellowColor:#F4CF1B;
 $greenColor:#369D53;
 $blColor:#D0E5F0;
+$widthSize: 100%;
 
+@mixin languge{
+    width: 80px;
+    height: 35px;
+    text-align: center;
+    background-color: rgba($color: #ffffff, $alpha: 0);
+    border-radius: 5px;
+    border: 1px solid $bluColor;                
+}
+%test{
+    text-align: center;
+    font-weight: bold;
+    color: $whiteColor;
+    background-color: $buttonColor;
+    border: 0px;
+    border-radius: 2px;
+}
+%displ{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
 
 *{
     box-sizing: border-box;

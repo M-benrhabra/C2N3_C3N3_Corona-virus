@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.hero-header__illustration .text button, .hero-header .prévention__Informations ul li button, .recommandations .section__display button, .recommandations__contact button {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1078AD;
+  border: 0px;
+  border-radius: 2px; }
+
+.hero-header .prévention__virus, .hero-header .prévention__Informations, .symptômes__covod, .recommandations .section__display {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -13,134 +26,107 @@ body {
   width: 100%;
   height: 70px;
   background: url("../images/png/Merged bar-17.png") repeat; }
-
-.hero-header__menu .logo {
-  height: 60px;
-  margin: 8px 40px; }
-
-.hero-header__menu ul {
-  float: right;
-  margin-right: 50px; }
-
-.hero-header__menu ul li {
-  display: inline-block;
-  margin: 0 20px;
-  line-height: 80px; }
-  .hero-header__menu ul li #icon {
-    color: #F4CF1B; }
-
-.hero-header__menu ul li a {
-  color: #000;
-  font-weight: bold; }
-
-.hero-header__menu ul li a:hover {
-  color: #1A519E; }
-
-.hero-header__menu ul li .button {
-  width: 80px;
-  height: 35px;
-  text-align: center;
-  color: #1078AD;
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 5px;
-  border: 1px solid #1078AD; }
+  .hero-header__menu .logo {
+    height: 60px;
+    margin: 8px 40px; }
+  .hero-header__menu ul {
+    float: right;
+    margin-right: 50px; }
+    .hero-header__menu ul li {
+      display: inline-block;
+      margin: 0 20px;
+      line-height: 80px; }
+      .hero-header__menu ul li #icon {
+        color: #F4CF1B; }
+      .hero-header__menu ul li a {
+        color: #000;
+        font-weight: bold; }
+      .hero-header__menu ul li a:hover {
+        color: #1A519E; }
+      .hero-header__menu ul li .button {
+        width: 80px;
+        height: 35px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 5px;
+        border: 1px solid #1078AD;
+        color: #1078AD; }
 
 .hero-header__info {
   width: 100%;
   height: 150px;
   background: url("../images/png/En chiffres-3.png");
   text-align: center; }
-
-.hero-header__info h2 {
-  padding: 15px;
-  font-size: 20px; }
-
-.hero-header__info p {
-  color: #1078AD; }
+  .hero-header__info h2 {
+    padding: 15px;
+    font-size: 20px; }
+  .hero-header__info p {
+    color: #1078AD; }
 
 .hero-header__illustration {
   display: flex;
   padding: 30px 25px;
   width: 100%; }
-
-.hero-header__illustration .doc {
-  width: 50%;
-  height: 50%; }
-
-.hero-header__illustration .text {
-  text-align: center;
-  line-height: 45px;
-  margin-top: 35px; }
-  .hero-header__illustration .text h2 {
-    color: #1078AD;
-    font-size: 30px;
-    margin-bottom: 25px; }
-  .hero-header__illustration .text p {
-    color: rgba(0, 0, 0, 0.5);
-    font-weight: bold;
-    font-size: 25px; }
-  .hero-header__illustration .text button {
-    margin-top: 30px;
-    width: 450px;
-    height: 45px;
+  .hero-header__illustration .doc {
+    width: 50%;
+    height: 50%; }
+  .hero-header__illustration .text {
     text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    color: #fff;
-    background-color: #1078AD;
-    border: 0px;
-    border-radius: 2px; }
+    line-height: 45px;
+    margin-top: 35px; }
+    .hero-header__illustration .text h2 {
+      color: #1078AD;
+      font-size: 30px;
+      margin-bottom: 25px; }
+    .hero-header__illustration .text p {
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      font-size: 25px; }
+    .hero-header__illustration .text button {
+      margin-top: 30px;
+      font-size: 20px;
+      width: 450px;
+      height: 45px; }
 
-.prévention {
+.hero-header .prévention {
   margin-top: 30px;
   text-align: center;
   line-height: 35px;
   font-weight: bold; }
-  .prévention h1 {
+  .hero-header .prévention h1 {
     font-size: 2rem;
     line-height: 37px;
     color: #1078AD; }
-  .prévention__virus {
+  .hero-header .prévention__virus {
     padding: 0 35px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-  .prévention__corona p {
+    margin-top: 30px; }
+  .hero-header .prévention__corona p {
     margin-bottom: 35px;
     color: #1A519E; }
-  .prévention__home {
+  .hero-header .prévention__home {
     margin: 30px; }
-    .prévention__home p {
+    .hero-header .prévention__home p {
       color: #1A519E; }
-  .prévention__Informations {
-    display: flex;
+  .hero-header .prévention__Informations {
     justify-content: space-between;
-    align-items: center;
     height: 250px;
     width: 100%;
     background-color: #D0E5F0;
     padding: 0px 90px; }
-    .prévention__Informations h2 {
+    .hero-header .prévention__Informations h2 {
       color: #1078AD;
       margin-bottom: 10px;
       font-size: 1.8rem; }
-    .prévention__Informations p {
+    .hero-header .prévention__Informations p {
       color: #1A519E;
       font-size: 1.2rem; }
-    .prévention__Informations ul {
+    .hero-header .prévention__Informations ul {
       display: flex; }
-      .prévention__Informations ul li {
+      .hero-header .prévention__Informations ul li {
         margin: 40px; }
-        .prévention__Informations ul li button {
+        .hero-header .prévention__Informations ul li button {
           width: 240px;
-          height: 45px;
-          text-align: center;
-          font-weight: bold;
-          color: #fff;
-          background-color: #1078AD;
-          border: 0px;
-          border-radius: 2px; }
+          height: 45px; }
 
 .symptômes {
   width: 100%;
@@ -170,9 +156,6 @@ body {
       font-size: 20px; }
   .symptômes__covod {
     height: 300px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     line-height: 30px; }
     .symptômes__covod p {
       font-weight: bold;
@@ -190,9 +173,7 @@ body {
     color: #fff; }
 
 .recommandations .section__display {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-top: 20px;
   line-height: 40px; }
   .recommandations .section__display h3 {
@@ -209,13 +190,9 @@ body {
     margin: 20px 0px;
     width: 150px;
     height: 50px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    color: #1078AD;
     background-color: #F4CF1B;
-    border: 0px;
-    border-radius: 3px; }
+    color: #1078AD;
+    font-size: 20px; }
   .recommandations .section__display a {
     color: #fff;
     border-bottom: 2px solid #F4CF1B; }
@@ -223,7 +200,7 @@ body {
 .recommandations__contact {
   width: 100%;
   height: 250px;
-  background-color: #96C5DC;
+  background-color: #D0E5F0;
   text-align: center; }
   .recommandations__contact h2 {
     color: #1078AD;
@@ -232,13 +209,7 @@ body {
     margin-top: 25px;
     width: 450px;
     height: 45px;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
-    color: #fff;
-    background-color: #1078AD;
-    border: 0px;
-    border-radius: 2px; }
+    font-size: 20px; }
 
 .hero-footer {
   text-align: center;

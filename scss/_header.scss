@@ -1,156 +1,138 @@
-.hero-header__menu{
-    width: 100%;
-    height: 70px;
-    background:url('../images/png/Merged\ bar-17.png') repeat;
-}
-.hero-header__menu .logo{
-    height: 60px;
-    margin: 8px 40px;
-}
-.hero-header__menu ul{
-    float: right;
-    margin-right: 50px;
-}
-.hero-header__menu ul li{
-    display: inline-block;
-    margin: 0 20px;
-    line-height: 80px;
-    #icon{
-        color: $yellowColor;
-    }
-}
-.hero-header__menu ul li a{
-    color: $blackColor;
-    font-weight: bold;
-}
-.hero-header__menu ul li a:hover{
-    color: $bColor;
-}
-.hero-header__menu ul li .button{
-    width: 80px;
-    height: 35px;
-    text-align: center;
-    color: $bluColor;
-    background-color: rgba($color: #ffffff, $alpha: 0);
-    border-radius: 5px;
-    border: 1px solid $bluColor;
-}
-.hero-header__info{
-    width: 100%;
-    height: 150px;
-    background: url('../images/png/En\ chiffres-3.png');
-    text-align: center;
-}
-.hero-header__info h2{
-    padding: 15px;
-    font-size: 20px;
-}
-.hero-header__info p{
-    color: $bluColor;
-    
-}
-.hero-header__illustration{
-    display: flex;
-    padding: 30px 25px;
-    width: 100%;
-}
-.hero-header__illustration .doc{
-    width: 50%;
-    height: 50%;
-}
-.hero-header__illustration .text{
-    text-align: center;
-    line-height: 45px;
-    margin-top: 35px;
-    h2{
-        color: $bluColor;
-        font-size: 30px;
-        margin-bottom: 25px;
-    }
-    p{
-        color: $opacityColor;
-        font-weight: bold;
-        font-size: 25px;
-    }
-    button{
-        margin-top: 30px;
-        width: 450px;
-        height: 45px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        color: $whiteColor;
-        background-color: $buttonColor;
-        border: 0px;
-        border-radius: 2px;
-    }
-    
-}
-.prévention{
-    margin-top: 30px;
-    text-align: center;
-    line-height: 35px;
-    font-weight: bold;
-    h1{
-        font-size: 2rem;
-        line-height: 37px;
-        color: $bluColor;
-    }
-    &__virus{
-        padding: 0 35px;
-        margin-top: 30px;
-        display: flex;
-        justify-content: space-around; 
-        align-items: center;
-    }
-    &__corona{
-        p{
-            margin-bottom: 35px;
-            color: $bColor;
+.hero-header{
+    &__menu{
+        width: $widthSize;
+        height: 70px;
+        background:url('../images/png/Merged\ bar-17.png') repeat;
+        .logo{
+            height: 60px;
+            margin: 8px 40px;
         }
-       
-    }
-   
-    &__home{
-        margin: 30px;
-        p{
-            color: $bColor;
-        }
-    }
-    &__Informations{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 250px;
-            width: 100%;
-            background-color: $blColor;
-            padding: 0px 90px;
-            h2{
-                color: $bluColor;
-                margin-bottom: 10px;
-                font-size: 1.8rem;
-            }
-            p{
-            color: $bColor;
-            font-size: 1.2rem;
-            }
-            ul{
-                display: flex;
-                li{
-                    margin: 40px;
-                    button{
-                        width: 240px;
-                        height: 45px;
-                        text-align: center;
-                        font-weight: bold;
-                        color: $whiteColor;
-                        background-color: $buttonColor;
-                        border: 0px;
-                        border-radius: 2px;
-                    }
+        ul{
+            float: right;
+            margin-right: 50px;
+            li{
+                display: inline-block;
+                margin: 0 20px;
+                line-height: 80px;
+                #icon{
+                    color: $yellowColor;
+                }
+                a{
+                    color: $blackColor;
+                    font-weight: bold;
+                }
+                a:hover{
+                    color: $bColor;
+                }
+                .button{
+                    @include languge ;
+                    color: $bluColor;
                 }
             }
+        }
     }
-    
+    &__info{
+        width: $widthSize;
+        height: 150px;
+        background: url('../images/png/En\ chiffres-3.png');
+        text-align: center;
+        h2{
+            padding: 15px;
+            font-size: 20px;
+        }
+        p{
+            color: $bluColor;
+        }
+    }
+    &__illustration{
+        display: flex;
+        padding: 30px 25px;
+        width: 100%;
+        .doc{
+            width: 50%;
+            height: 50%;
+        }
+        .text{
+            text-align: center;
+            line-height: 45px;
+            margin-top: 35px;
+            h2{
+                color: $bluColor;
+                font-size: 30px;
+                margin-bottom: 25px;
+            }
+            p{
+                color: $opacityColor;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            button{
+                margin-top: 30px;
+                font-size: 20px;
+                width: 450px;
+                height: 45px;
+                @extend %test ; 
+            }
+            
+        }
+    }
+    .prévention{
+        margin-top: 30px;
+        text-align: center;
+        line-height: 35px;
+        font-weight: bold;
+        h1{
+            font-size: 2rem;
+            line-height: 37px;
+            color: $bluColor;
+        }
+        &__virus{
+            padding: 0 35px;
+            margin-top: 30px;
+            @extend %displ;
+        }
+        &__corona{
+            p{
+                margin-bottom: 35px;
+                color: $bColor;
+            }
+           
+        }
+       
+        &__home{
+            margin: 30px;
+            p{
+                color: $bColor;
+            }
+        }
+        &__Informations{
+                @extend %displ;
+                justify-content: space-between;
+                height: 250px;
+                width: 100%;
+                background-color: $blColor;
+                padding: 0px 90px;
+                h2{
+                    color: $bluColor;
+                    margin-bottom: 10px;
+                    font-size: 1.8rem;
+                }
+                p{
+                color: $bColor;
+                font-size: 1.2rem;
+                }
+                ul{
+                    display: flex;
+                    li{
+                        margin: 40px;
+                        button{
+                            width: 240px;
+                            height: 45px;
+                            @extend %test ; 
+                        }
+                    }
+                }
+        }
+        
+    }
 }
-
