@@ -64,3 +64,43 @@
         }
     }
 }
+@media ( max-width:767px ) {
+    .recommandations{
+        &__offic{
+            padding:0px;
+            h1{
+                font-size: 1rem;
+            }
+        }
+        .section{
+            &__display{
+                display: block;
+                line-height: 25px;
+                margin-top: 5px;
+                h3{
+                    font-size: 0.7rem;
+                    text-align: center;
+                }
+                p{
+                    font-size: 0.7rem;
+                    text-align: center;  
+                }
+            }
+        } 
+        &__contact{
+            height: 160px;
+            h2{
+                font-size: 0.7rem;
+            }
+            img{
+                width: 10%;
+            }
+            button{
+                width: 300px;
+                height: 30px; 
+                font-size: 1rem;
+                margin-top: 10px;
+            } 
+        }
+    }
+}

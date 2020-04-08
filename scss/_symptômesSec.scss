@@ -44,4 +44,33 @@
     
     }
 }
-
+@media ( max-width:767px ) {
+    .symptômes{
+        h1{
+            font-size: 1rem;
+        }
+        .icon{
+            .cas-virus{
+                width: 50%;  
+            }
+            &__left{
+                margin:35px 50px;
+                p{
+                    font-size: 0.6rem;
+                    margin-bottom: 30px;
+                }
+                .fièvre{
+                    width: 25%;
+                }
+            }
+            &__right{
+                margin:35px 50px;
+                p{
+                    font-size: 0.6rem;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        
+    } 
+}

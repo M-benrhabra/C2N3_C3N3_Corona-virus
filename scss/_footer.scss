@@ -50,6 +50,35 @@
         background-color: $buttonColor;
     }
 }
-
+@media ( max-width:767px ) {
+    .hero-footer{
+        img{
+            width: 12%;
+        }
+        &__infoo{
+           flex-wrap: wrap; 
+        }
+        .contenu{
+            &__nav{
+                ul {
+                    line-height: 40px;
+                    button{
+                        width: 120%;
+                        height: 25px;  
+                    }  
+                }
+            }
+            &__utiles{
+                ul{
+                    line-height: 30px;
+                }
+            }
+            &__parag{
+                margin-top: 0px;
+                line-height: 25px; 
+            }
+        }
+    }
+}
    
    
