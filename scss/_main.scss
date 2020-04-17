@@ -37,14 +37,14 @@ $widthSize: 100%;
     padding: 0px;
     text-decoration: none;
     list-style-type: none;
-
+}
 :lang(fr) [data-fr] { display: block; }
 :lang(fr) [data-ar] { display: none; }
 
-:lang(ar) [data-ar] { display: block;  direction: rtl;  }
+:lang(ar) [data-ar] { display: block;  direction: rtl;}
 :lang(ar) [data-fr] { display: none; }
 
-}
+
 body{
     font-family: Roboto, Helvetica, Arial, sans-serif;
     
