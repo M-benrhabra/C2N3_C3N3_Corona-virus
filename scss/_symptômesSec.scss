@@ -44,6 +44,38 @@
     
     }
 }
+.test{
+    width: $widthSize;
+    height: 750px;
+    text-align: center;
+    line-height: 160px;
+    &__préambule{
+        margin: auto;
+        width: 80%;
+        height: 400px;
+        background-color: $newColor;
+        line-height: 35px;
+        border-radius: 5px;
+        h2{
+            padding: 20px;
+            color: $buttonColor;
+        }
+        p{
+            padding: 0px 50px;
+        }
+        div{
+            border-bottom: 2px solid $yellowColor;
+            width: 200px;
+            margin: 20px auto;
+        }
+    }
+    &__button{
+        width: 300px;
+        height: 45px;
+        font-size: 1.5rem;
+        @extend %test ; 
+    }
+}
 @media ( max-width:767px ) {
     .symptômes{
         h1{
