@@ -44,10 +44,101 @@
     
     }
 }
+
+//multi steps form
+
+.wrapper {
+    margin: 50px auto;
+    max-width: 600px;
+    .radio-btn-wrapper {
+        position: relative;
+      }
+     
+    .radio-btn-wrapper:after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #026534;
+        position: absolute;
+        left: 0%;
+        top: 23px;
+        z-index: -1;
+    }
+    .radio-btn {
+        display: inline-block;
+        text-align: center;
+    }
+    .radio-btn:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .radio-btn:first-child .radio-btn__indicator {
+        margin-left: 0;
+    }
+    .radio-btn:last-child {
+        position: absolute;
+        right: 0;
+    }
+    .radio-btn:last-child .radio-btn__indicator {
+        margin-right: 0;
+    }
+    .label {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .radio-btn label {
+        color: $blackColor;
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .radio-btn input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    .radio-btn__indicator {
+        position: relative;
+        margin: 0 auto;
+          width: 50px;
+          height: 50px;
+          background: $whiteColor;
+    }
+    .radio-btn .radio-btn__indicator {
+        border-radius: 50%;
+    }
+     /* Hover */
+    .radio-btn:hover input ~ .radio-btn__indicator,
+    .radio-btn input:focus ~ .radio-btn__indicator {
+        background: #999;
+    }
+    /* Checked */
+    .radio-btn input:checked ~ .radio-btn__indicator {
+        background: $buttonColor;
+        border-color: #FDCD28;
+    }
+    /* Radio button circle */
+   .radio-btn .radio-btn__indicator:after {
+      position: absolute;
+      content: '';
+      top: 16px;
+      left: 16px;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: $yellowColor;
+   }
+}
+
+// Information__préambule
+
 .test{
     display: block;
     width: $widthSize;
-    height: 750px;
+    height: 650px;
     text-align: center;
     line-height: 160px;
     &__préambule{
@@ -77,17 +168,49 @@
         @extend %test ; 
     }
 }
+
+// Question style 1
+
 .questions{
     display: none;
     width: $widthSize;
-    height: 800px;
-    line-height: 120px;
-    &__q1{
-        display: inline-block;
+    line-height: 30px;
+    &__pro{
+        width: $widthSize;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .progress-bar{
+            width: 580px;
+            height: 15px;
+            border-radius: 15px;
+            background-color: #E6F1F7;
+            margin: 10px 5px;  
+        }
+        .progress{
+            width: 20px;
+            height: 15px;
+            border-radius: 15px;
+            background-color: $buttonColor;  
+        }
     }
-    h2{
+    
+    &__createElement{
+        width: 80%;
+        height: 350px;
+        // border: 1px solid #000;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px $buttonColor;
+        margin: 40px auto;
+        h1{
+            padding: 20px;
+        }
+    }
+
+    h1{
         color: $opacityColor;
         text-align: center;
+        margin: 50px ;
     }
     &__inputs{
         width: 80%;
@@ -158,15 +281,204 @@
             font-weight: bold;
         }
     }
-    button{
-        width: 250px;
-        height: 45px;
-        margin-top: 40px;
-        margin-left: 900px;
-        font-size: 1.5rem;
-        @extend %test ;  
+    &__butttons{
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+        margin: 50px auto 20px;
+        button{
+            width: 250px;
+            height: 45px;
+            margin-top: 40px;
+            font-size: 1.5rem;
+            @extend %test ;  
+        }
     }
 }
+
+// Question style 2
+
+.question2{
+    width: $widthSize;
+    line-height: 30px;
+    h1{
+       color: $opacityColor;
+       text-align: center; 
+       margin-bottom: 50px;
+    }
+    &__degré{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 40px;
+        input{
+            width: 200px;
+            height: 50px;
+            border-radius: 5px;
+            border: 2px solid $buttonColor;
+            outline: none;
+            font-size: 20px;
+            margin: 0px 5px;
+        }
+        label{
+            font-size: 20px; 
+            color: $buttonColor;
+        }
+    }
+    &__suivent{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        button{
+        width: 250px;
+        height: 45px;
+        font-size: 1.5rem;
+        @extend %test ;  
+        }  
+    }
+}
+
+// Question style 3
+
+.question3{
+    width: $widthSize;
+    text-align: center;
+    line-height: 30px;
+    h1{
+        color: $opacityColor;
+        padding: 50px;
+        margin-bottom: 50px;
+    }
+    &__q{
+        width: 60%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+    &__inputs{
+        width: 80%;
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        .reponse{
+            width: 200px;
+            height: 60px;
+            margin: 20px 50px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            label{
+                font-size: 25px;
+                cursor: pointer;
+                color: $opacityColor;
+                text-align: center;
+            }
+            input{
+                display: none;
+            }
+            label::after{
+                content: "";
+                position: absolute;
+                right: 15%;
+                bottom: 25%;
+                width: 25px;
+                height: 25px;
+                border: 3px solid $buttonColor;
+                border-radius: 50%;
+                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
+            }
+            label::before{
+                content: "";
+                position: absolute;
+                right: 18%;
+                bottom: 19%;
+                transform: translateY(-50%);
+                width: 19px;
+                height: 19px;
+                background-color: $yellowColor;
+                border-radius: 50%;
+                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
+                opacity: 0;
+                transition: opacity 0.4s;
+            }
+            input:checked ~ label::before {
+                 opacity: 1;
+            }
+        }
+    }
+
+}
+
+// Question style 4
+
+.question4 {
+    width: $widthSize;
+    line-height: 30px;
+    h1{
+        color: $opacityColor;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__inputs{
+        width: 60%;
+        margin: auto;
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        .reponse{
+            width: 200px;
+            height: 60px;
+            margin: 5px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            label{
+                font-size: 25px;
+                cursor: pointer;
+                color: $opacityColor;
+            }
+            input{
+                display: none;
+            }
+            label::after{
+                content: "";
+                position: absolute;
+                right: 15%;
+                bottom: 25%;
+                width: 25px;
+                height: 25px;
+                border: 3px solid $buttonColor;
+                border-radius: 50%;
+                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
+            }
+            label::before{
+                content: "";
+                position: absolute;
+                right: 18%;
+                bottom: 19%;
+                transform: translateY(-50%);
+                width: 19px;
+                height: 19px;
+                background-color: $yellowColor;
+                border-radius: 50%;
+                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
+                opacity: 0;
+                transition: opacity 0.4s;
+            }
+            input:checked ~ label::before {
+                 opacity: 1;
+            }
+        }
+
+    }  
+    
+}
+
 
 @media ( max-width:767px ) {
     .symptômes{
@@ -197,4 +509,9 @@
         }
         
     } 
+}
+
+
+.précedent{
+    display: none;
 }

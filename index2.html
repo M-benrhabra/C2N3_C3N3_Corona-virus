@@ -33,9 +33,33 @@
     <!------------------------------------------------------------------------------------------
     ________________________________****start section test***** ____________________________________
     ------------------------------------------------------------------------------------------->
+    <section class="wrapper">
+        <div class="radio-btn-wrapper">
+            <div class="radio-btn">
+                <label>
+                    <input type="radio" name="radio1" checked="checked" />
+                    <div class="radio-btn__indicator"></div>
+                    <div class="label">Informations</div>
+                </label>
+            </div>
+            <div class="radio-btn">
+                <label>
+                    <input type="radio" name="radio2" id="questionnaire" />
+                    <div class="radio-btn__indicator"></div>
+                    <div class="label">Questionnaire</div>
+                </label>
+            </div>
+            <div class="radio-btn">
+                <label>
+                    <input type="radio" name="radio3" />
+                    <div class="radio-btn__indicator"></div>
+                    <div class="label">Résultats</div>
+                </label>
+            </div>
+        </div>
+    </section>
     <section class="test">
 
-        <input class="test__input" type="range">
         <div class="test__préambule">
             <h2>Préambule</h2>
             <p>
@@ -59,28 +83,39 @@
                 concerné le cas échéant et en cas de doute, en consultant un médecin compétent.
             </p>
         </div>
-        <button class="test__button click">démarer le test</button>
+        <button onclick="quesClick()" id="oneClick" class="test__button">démarer le test</button>
 
     </section>
 
 
     <section class="questions">
-        <div class="questions__q1">
-            <input type="range">
-            <input type="range">
+        <div class="questions__pro">
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <div class="score"></div>
+        </div>
+        <!-- <div class="questions__q1">
         </div>
         <h2> Pensez-vous avoir ou avoir eu de la fièvre
             ces derniers jours (frissons, sueurs) ?
         </h2>
         <div class="questions__inputs">
             <div class="reponse">
-                <input type="radio" id="check1" name="radio">
+                <input type="radio" id="checke1" name="radio">
                 <label for="check1"> oui </label>
             </div>
             <div class="reponse">
-                <input type="radio" id="check2" name="radio">
-                <label for="check2"> non </label>
+                <input type="radio" id="check2" name="radio"><
+                <label for="checke2"> non </label>
             </div>
+        </div> -->
+        <div class="questions__createElement">
+            <h1 class="change">text</h1>
+            <div class="form">
+
+            </div>
+
         </div>
 
         <div class="questions__one">
@@ -92,13 +127,40 @@
                 n'arrêtez pas ce traitement, demandez l'avis de votre médecin ou de votre pharmacien.
             </p>
         </div>
-        <button> <a href="">question suivante</a> </button>
+        <div class="questions__butttons">
+            <div>
+                <button class="précedent">question président</button>
+            </div>
+            <div>
+                <button class="next">question suivante</button>
+            </div>
+        </div>
     </section>
-
-    <section>
-        
-    </section>
-
+    <!-- <section class="question3">
+        <h1>Que pensez-vous de votre corps?</h1>
+        <div class="question3__q">
+            <div class="question3__inputs">
+                <div class="reponse">
+                    <input type="radio" id="fatig" name="check">
+                    <label for="fatig"> fatigue </label>
+                </div>
+                <div class="reponse">
+                    <input type="radio" id="trop" name="check">
+                    <label for="trop"> trop fatgue </label>
+                </div>
+            </div>
+            <div class="question3__inputs">
+                <div class="reponse">
+                    <input type="radio" id="Bien" name="check">
+                    <label for="Bien"> Bien </label>
+                </div>
+                <div class="reponse">
+                    <input type="radio" id="moyen" name="check">
+                    <label for="moyen"> moyen </label>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
     <!------------------------------------------------------------------------------------------
     ________________________________***section recommandations***** ___________________________
@@ -136,7 +198,7 @@
                 </div>
             </div>
         </div>
-        <div class="recommandations__contact">
+        <!-- <div class="recommandations__contact">
             <h2 data-fr> Vous pensez avoir été exposé au Coronavirus COVID-19 et avez des symptômes ? </h2>
             <h2 data-ar>واش كتضن انك تعرضت لفيروس كورونا المستجد و عندك الأعراض ديالها؟ </h2>
             <img src="images/png/1f637.png" alt="icon">
@@ -144,7 +206,7 @@
                 <button data-fr>Demarer le test</button>
                 <button data-ar>نبداو الاختبار</button>
             </div>
-        </div>
+        </div> -->
     </section>
 
 
