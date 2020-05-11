@@ -110,11 +110,6 @@
     .radio-btn .radio-btn__indicator {
         border-radius: 50%;
     }
-     /* Hover */
-    .radio-btn:hover input ~ .radio-btn__indicator,
-    .radio-btn input:focus ~ .radio-btn__indicator {
-        background: #999;
-    }
     /* Checked */
     .radio-btn input:checked ~ .radio-btn__indicator {
         background: $buttonColor;
@@ -173,8 +168,9 @@
 
 .questions{
     display: none;
-    width: $widthSize;
-    line-height: 30px;
+    @include largeur;
+
+    // progress-bar
     &__pro{
         width: $widthSize;
         display: flex;
@@ -287,7 +283,7 @@
         justify-content: space-around;
         margin: 50px auto 20px;
         button{
-            width: 250px;
+            width: 280px;
             height: 45px;
             margin-top: 40px;
             font-size: 1.5rem;
@@ -299,8 +295,7 @@
 // Question style 2
 
 .question2{
-    width: $widthSize;
-    line-height: 30px;
+    @include largeur;
     h1{
        color: $opacityColor;
        text-align: center; 
@@ -342,9 +337,8 @@
 // Question style 3
 
 .question3{
-    width: $widthSize;
+    @include largeur;
     text-align: center;
-    line-height: 30px;
     h1{
         color: $opacityColor;
         padding: 50px;
@@ -363,46 +357,20 @@
         align-items: flex-end;
         flex-direction: column;
         .reponse{
-            width: 200px;
-            height: 60px;
+            @extend .repond;
             margin: 20px 50px;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            position: relative;
             label{
-                font-size: 25px;
-                cursor: pointer;
-                color: $opacityColor;
+                @extend .labe;
                 text-align: center;
             }
             input{
                 display: none;
             }
             label::after{
-                content: "";
-                position: absolute;
-                right: 15%;
-                bottom: 25%;
-                width: 25px;
-                height: 25px;
-                border: 3px solid $buttonColor;
-                border-radius: 50%;
-                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
+                @extend .label-after;
             }
             label::before{
-                content: "";
-                position: absolute;
-                right: 18%;
-                bottom: 19%;
-                transform: translateY(-50%);
-                width: 19px;
-                height: 19px;
-                background-color: $yellowColor;
-                border-radius: 50%;
-                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
-                opacity: 0;
-                transition: opacity 0.4s;
+                @extend .label-before;
             }
             input:checked ~ label::before {
                  opacity: 1;
@@ -415,8 +383,7 @@
 // Question style 4
 
 .question4 {
-    width: $widthSize;
-    line-height: 30px;
+    @include largeur;
     h1{
         color: $opacityColor;
         text-align: center;
@@ -430,45 +397,19 @@
         justify-content: space-around;
         flex-direction: row;
         .reponse{
-            width: 200px;
-            height: 60px;
+            @extend .repond;
             margin: 5px;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            position: relative;
             label{
-                font-size: 25px;
-                cursor: pointer;
-                color: $opacityColor;
+                @extend .labe;
             }
             input{
                 display: none;
             }
             label::after{
-                content: "";
-                position: absolute;
-                right: 15%;
-                bottom: 25%;
-                width: 25px;
-                height: 25px;
-                border: 3px solid $buttonColor;
-                border-radius: 50%;
-                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
+                @extend .label-after;
             }
             label::before{
-                content: "";
-                position: absolute;
-                right: 18%;
-                bottom: 19%;
-                transform: translateY(-50%);
-                width: 19px;
-                height: 19px;
-                background-color: $yellowColor;
-                border-radius: 50%;
-                box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.5);
-                opacity: 0;
-                transition: opacity 0.4s;
+               @extend .label-before;
             }
             input:checked ~ label::before {
                  opacity: 1;
@@ -479,9 +420,51 @@
     
 }
 
+.resultat{
+    display: none;
+    line-height: 30px;
+    h1{
+        text-align: center;
+        color: $yellowColor;
+        font-size: 1.8rem;
+    }
+    &__explication{
+        width: 50%;
+        height: 300px;
+       border-radius: 5px;
+        margin: 40px auto;
+        background-color: $newColor;
+        h2{
+            text-align: center;
+            color: $whiteColor;
+            padding: 20px;
+        }
+        p{
+            text-align: center;
+            color: $bluColor;
+            padding: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            margin: auto 10px;
+        }
+    }
+    &__reprendre{
+        margin: auto;
+        text-align: center;
+        button{
+            width: 280px;
+            height: 45px;
+            margin-top: 40px;
+            font-size: 1.5rem;
+            @extend %test ; 
+        }
+    }
+}
+
 
 @media ( max-width:767px ) {
     .symptômes{
+        margin-top: 20px;
         h1{
             font-size: 1rem;
         }
@@ -511,7 +494,32 @@
     } 
 }
 
-
+@media ( max-width:992px ) {
+    .symptômes{
+    .icon{
+        .cas-virus{
+            width: 50%;  
+        }
+        &__left{
+            margin:35px 50px;
+            p{
+                font-size: 0.6rem;
+                margin-bottom: 30px;
+            }
+            .fièvre{
+                width: 25%;
+            }
+        }
+        &__right{
+            margin:15px 50px;
+            p{
+                font-size: 0.6rem;
+                margin-bottom: 23px;
+            }
+        }
+    }
+}
+}
 .précedent{
     display: none;
 }

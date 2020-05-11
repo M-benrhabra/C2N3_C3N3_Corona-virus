@@ -101,8 +101,28 @@
                 width: 300px;
                 height: 30px; 
                 font-size: 1rem;
-                margin-top: 10px;
+                margin: 10px auto;
             } 
+        }
+    }
+}
+@media ( max-width:992px ) {
+    .recommandations{
+        .section{
+            &__display{
+                p{
+                    font-size: 1rem;
+                }
+                
+            }
+        }
+        &__contact{
+            button{
+                margin: 20px auto 0px;
+                font-size: 1.25rem;
+                width: 250px;
+                height: 35px;
+            }
         }
     }
 }
